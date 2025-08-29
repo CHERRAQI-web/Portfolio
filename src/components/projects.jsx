@@ -1,5 +1,5 @@
 import webLearn from '../images/webLearn.PNG';
-import Bureau from '../images/Bureau.webp'
+import Bureau from '../images/Bureau.PNG'
 
 const Projects = () => {
   const projects = [
