@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import Me from '../images/mee.png'
-import CV from '../../public/CV.pdf'
+import cvFile from '../assets/cv.pdf';
 const Hero = () => {
   // Logic for the typing effect
   const text = "<Full-Stack Web Developer/>";
@@ -46,7 +46,7 @@ const Hero = () => {
               Explore My Projects
             </a>
             <a 
-  href="/cv.pdf" target="_blank" download
+  href={cvFile} target="_blank" download
   rel="noopener noreferrer" 
    
   className="flex items-center gap-2 bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
