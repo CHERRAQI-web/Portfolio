@@ -46,10 +46,9 @@ const Hero = () => {
               Explore My Projects
             </a>
             <a 
-  href="/CV.pdf" 
-  target="_blank" 
+  href="/cv.pdf" target="_blank" download
   rel="noopener noreferrer" 
-  download 
+   
   className="flex items-center gap-2 bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
 >
   <svg 
