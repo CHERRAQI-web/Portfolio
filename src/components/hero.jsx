@@ -45,10 +45,11 @@ const Hero = () => {
             <a href="#projects" className="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors">
               Explore My Projects
             </a>
-           <a 
+            <a 
   href="/CV.pdf" 
   target="_blank" 
   rel="noopener noreferrer" 
+  download 
   className="flex items-center gap-2 bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
 >
   <svg 
@@ -69,6 +70,7 @@ const Hero = () => {
   </svg>
   Download CV
 </a>
+
 
           </div>
         </div>
