@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import Me from '../images/mee.png'
+import CV from '../../public/CV.pdf'
 const Hero = () => {
   // Logic for the typing effect
   const text = "<Full-Stack Web Developer/>";
@@ -44,7 +45,7 @@ const Hero = () => {
             <a href="#projects" className="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-700 transition-colors">
               Explore My Projects
             </a>
-            <a href="./public/CV.pdf" target="_blank" className="flex items-center gap-2 bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors">
+            <a href={CV} target="_blank" className="flex items-center gap-2 bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-to-line-icon">
                 <path d="M12 17V3" />
                 <path d="m6 11 6 6 6-6" />
