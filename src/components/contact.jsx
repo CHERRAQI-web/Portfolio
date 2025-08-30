@@ -1,22 +1,21 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [statusMessage, setStatusMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isEmailJsReady, setIsEmailJsReady] = useState(false);
   
-  // EmailJS credentials from the user's last provided code
+  // EmailJS credentials
   const emailJsUserId = 'oUJu8bqObWc_Yzwt2'; 
   const emailJsServiceId = 'service_cm5ot62'; 
   const emailJsTemplateId = 'template_ydhl8yi'; 
 
   useEffect(() => {
-    // Dynamically load the EmailJS SDK
     const script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
     script.async = true;
     script.onload = () => {
-      // Once the SDK is loaded, initialize it with the public key
       if (window.emailjs) {
         window.emailjs.init(emailJsUserId);
         setIsEmailJsReady(true);
@@ -29,7 +28,6 @@ const Contact = () => {
     document.body.appendChild(script);
 
     return () => {
-      // Clean up the script tag on component unmount
       document.body.removeChild(script);
     };
   }, [emailJsUserId]);
@@ -50,26 +48,32 @@ const Contact = () => {
 
     if (isFormValid) {
       setIsSubmitting(true);
-      // Construct the data payload for EmailJS
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
       };
 
-      // Ensure the emailjs object is available before calling send
       if (window.emailjs) {
         window.emailjs.send(emailJsServiceId, emailJsTemplateId, templateParams)
           .then((result) => {
             console.log('Email successfully sent!', result.text);
             setStatusMessage('Message envoyé avec succès ! Merci de m\'avoir contacté.');
+            setFormData({ name: '', email: '', message: '' });
+            // Supprimer le message après 5 secondes
+            setTimeout(() => {
+              setStatusMessage('');
+            }, 5000); 
           }, (error) => {
             console.error('Email sending failed:', error.text);
             setStatusMessage('Échec de l\'envoi du message. Veuillez réessayer.');
+            // Supprimer le message après 5 secondes
+            setTimeout(() => {
+              setStatusMessage('');
+            }, 5000);
           })
           .finally(() => {
             setIsSubmitting(false);
-            setFormData({ name: '', email: '', message: '' }); // Clear the form
           });
       } else {
         console.error('EmailJS SDK not loaded.');
@@ -78,6 +82,10 @@ const Contact = () => {
       }
     } else {
       setStatusMessage('Veuillez remplir tous les champs.');
+      // Supprimer le message après 5 secondes
+      setTimeout(() => {
+        setStatusMessage('');
+      }, 5000);
     }
   };
 
