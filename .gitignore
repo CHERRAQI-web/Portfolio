@@ -27,3 +27,4 @@ eslint.config.js
 *.sw?
 package-lock.json
 package.json
+.env

@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended"
+  ],
+  "rules": {
+    // Vous pouvez ajouter des règles personnalisées si nécessaire
+  }
+}
