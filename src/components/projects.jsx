@@ -27,6 +27,15 @@ const Projects = () => {
       image: visiocraft,
       link: "https://github.com/CHERRAQI-web/visiocraft.git",
     },
+    
+    {
+      title: "share in ",
+      tech: "React.js, Tailwind CSS,Node.js, Python,MongoDB,Google Drive API,JWT, bcrypt",
+      description:
+        "Développement full-stack d'une plateforme web innovante intégrant des fonctionnalités d'IA pour automatiser la gestion de projets. La plateforme connecte clients et freelancers, avec des fonctionnalités avancées comme l'extraction automatique des compétences requises pour chaque projet et la création automatique de dossiers dans Google Drive. J'ai implémenté un système d'authentification sécurisé avec des rôles multiples et un flux de travail complet optimisé par l'IA.",
+      image: visiocraft,
+      link: "https://github.com/CHERRAQI-web/visiocraft.git",
+    },
   ];
 
   return (
@@ -35,7 +44,7 @@ const Projects = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
           My Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <div
               key={index}
