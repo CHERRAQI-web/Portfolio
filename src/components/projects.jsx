@@ -1,6 +1,8 @@
 import webLearn from "../images/webLearn.PNG";
 import Bureau from "../images/Bureau.PNG";
 import visiocraft from "../images/visio.PNG";
+import sharein from "../images/ShareIn.PNG";
+
 const Projects = () => {
   const projects = [
     {
@@ -27,14 +29,14 @@ const Projects = () => {
       image: visiocraft,
       link: "https://github.com/CHERRAQI-web/visiocraft.git",
     },
-    
+
     {
       title: "share in ",
-      tech: "React.js, Tailwind CSS,Node.js, Python,MongoDB,Google Drive API,JWT, bcrypt",
+      tech: " Python, Flask, Développement d'API RESTful, OpenCV, Tesseract , Tailwind CSS,Node.js, Python,MongoDB,JWT, bcrypt",
       description:
-        "Développement full-stack d'une plateforme web innovante intégrant des fonctionnalités d'IA pour automatiser la gestion de projets. La plateforme connecte clients et freelancers, avec des fonctionnalités avancées comme l'extraction automatique des compétences requises pour chaque projet et la création automatique de dossiers dans Google Drive. J'ai implémenté un système d'authentification sécurisé avec des rôles multiples et un flux de travail complet optimisé par l'IA.",
-      image: visiocraft,
-      link: "https://github.com/CHERRAQI-web/visiocraft.git",
+        "Built an AI-powered information extraction system for Moroccan administrative documents (ID Cards, Driver's Licenses, Vehicle Registration). The project leverages advanced Computer Vision and OCR techniques (OpenCV, Tesseract) to automate data reading and structuring with high accuracy.",
+      image: sharein,
+      link: "https://github.com/CHERRAQI-web/ShareIn.git",
     },
   ];
 
