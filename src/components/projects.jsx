@@ -32,7 +32,7 @@ const Projects = () => {
 
     {
       title: "share in ",
-      tech: " Python, Flask, Développement d'API RESTful, OpenCV, Tesseract , Tailwind CSS,Node.js, Python,MongoDB,JWT, bcrypt",
+      tech: " Python, Flask, Développement d'API RESTful, OpenCV, Tesseract , Tailwind CSS,Node.js, MongoDB,JWT, bcrypt",
       description:
         "Built an AI-powered information extraction system for Moroccan administrative documents (ID Cards, Driver's Licenses, Vehicle Registration). The project leverages advanced Computer Vision and OCR techniques (OpenCV, Tesseract) to automate data reading and structuring with high accuracy.",
       image: sharein,
