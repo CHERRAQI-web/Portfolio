@@ -9,7 +9,8 @@ const Projects = () => {
       title: "JOB LINK",
       tech: "React.js, Node.js, Express.js, MongoDB,Tailwind CSS,JWT, bcrypt",
       description:
-        "Conception et développement d'une plateforme de recrutement complète. Création d'un front-end dynamique avec React.js et d'un back-end avec Node.js/Express.js. Utilisation de MongoDB pour le stockage des données. Le projet inclut un back-office sécurisé et des fonctionnalités comme la recherche d'offres et le tableau de bord.",
+      "Design and development of a complete recruitment platform. Creation of a dynamic front-end with React.js and a back-end with Node.js/Express.js. Use of MongoDB for data storage. The project includes a secure back-office and features such as job offer search and a dashboard.",
+
       image: Bureau,
       link: "https://github.com/CHERRAQI-web/Bureau-recrutement.git",
     },
@@ -25,8 +26,8 @@ const Projects = () => {
       title: "visiocraft",
       tech: "React.js, Tailwind CSS,Node.js, Python,MongoDB,Google Drive API,JWT, bcrypt",
       description:
-        "Développement full-stack d'une plateforme web innovante intégrant des fonctionnalités d'IA pour automatiser la gestion de projets. La plateforme connecte clients et freelancers, avec des fonctionnalités avancées comme l'extraction automatique des compétences requises pour chaque projet et la création automatique de dossiers dans Google Drive. J'ai implémenté un système d'authentification sécurisé avec des rôles multiples et un flux de travail complet optimisé par l'IA.",
-      image: visiocraft,
+        "Full-stack development of an innovative web platform integrating AI features to automate project management. The platform connects clients and freelancers, with advanced functionalities such as automatic extraction of required skills for each project and the automatic creation of folders in Google Drive. I implemented a secure authentication system with multiple roles and a fully optimized workflow powered by AI.",
+              image: visiocraft,
       link: "https://github.com/CHERRAQI-web/visiocraft.git",
     },
 
